@@ -8,7 +8,7 @@ const CustomFaq = () => {
         setActive(active === index ? null : index);
       };
   return (
-    <div className="container pt-[210px] max-xl:py-[170px] max-lg:py-10 max-md:py-8">
+    <div className="container pt-[210px] max-xl:pt-[170px] max-lg:pt-10 max-md:pt-8">
       <h2 className="text-white text-center text-[48px] font-semibold leading-[57.6px] py-[56px]">
         FAQ's
       </h2>
