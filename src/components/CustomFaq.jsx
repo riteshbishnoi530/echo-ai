@@ -8,6 +8,7 @@ const CustomFaq = () => {
         setActive(active === index ? null : index);
       };
   return (
+    <div className='px-4'>
     <div className="container pt-[210px] max-xl:pt-[170px] max-lg:pt-10 max-md:pt-8">
       <h2 className="text-white text-center text-[48px] font-semibold leading-[57.6px] py-[56px]">
         FAQ's
@@ -47,6 +48,7 @@ const CustomFaq = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 }
