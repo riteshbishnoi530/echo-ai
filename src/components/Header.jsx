@@ -35,7 +35,7 @@ const Header = () => {
                 <button className='max-lg:hidden text-xl font-semibold rounded-full text-white bg-gradient-to-r from-lite-blue to-sky-blue py-[13.5px] px-8  hover:scale-110 duration-300 ease-linear'>Get Started</button>
                 <div onClick={toggleSidebar} className='z-[15] flex-col gap-1 lg:hidden flex'>
                     <span className={`${open ? 'w-8 h-1 bg-gradient-to-r from-lite-blue to-sky-blue rotate-45 translate-y-3 duration-300 ease-linear rounded' : 'w-8 h-1 bg-gradient-to-r from-lite-blue to-sky-blue duration-300 ease-linear rounded'}`}></span>
-                    <span className={`${open ? 'w-8 h-1 bg-gradient-to-r from-lite-blue to-sky-blue  opacity-0 duration-300 ease-linear' : 'w-8 h-1 bg-gradient-to-r from-lite-blue to-sky-blue duration-700 ease-linear rounded'}`}></span>
+                    <span className={`${open ? 'w-8 h-1 bg-gradient-to-l from-lite-blue to-sky-blue  opacity-0 duration-300 ease-linear' : 'w-8 h-1 bg-gradient-to-l from-lite-blue to-sky-blue duration-700 ease-linear rounded'}`}></span>
                     <span className={`${open ? 'w-8 h-1 bg-gradient-to-r from-lite-blue to-sky-blue -rotate-45 -translate-y-1 duration-300 ease-linear rounded' : 'w-8 h-1 bg-gradient-to-r from-lite-blue to-sky-blue duration-300 ease-linear rounded'}`}></span>
                 </div>
             </div>

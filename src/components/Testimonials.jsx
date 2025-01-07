@@ -10,6 +10,7 @@ import 'swiper/css/pagination';
 import { Autoplay, Pagination } from 'swiper/modules';
 function Testimonials() {
     return (
+      <div className='px-4'>
         <div className='container overflow-hidden'>
             <Heading heading={"Testimonials"} />
             <Swiper
@@ -57,6 +58,7 @@ function Testimonials() {
                         </SwiperSlide>
                     ))}
             </Swiper>
+        </div>
         </div>
     )
 }

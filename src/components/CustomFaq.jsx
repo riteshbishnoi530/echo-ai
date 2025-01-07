@@ -11,7 +11,7 @@ const CustomFaq = () => {
     <div className='px-4'>
     <div className="container pt-[210px] max-xl:pt-[170px] max-lg:pt-10 max-md:pt-8">
       <h2 className="text-white text-center text-[48px] font-semibold leading-[57.6px] py-[56px]">
-        FAQ's
+        FAQs
       </h2>
       <div className="max-w-[1022px] flex flex-col gap-6 mx-auto">
         {FAQ_LIST.map((item, index) => (
@@ -25,9 +25,7 @@ const CustomFaq = () => {
           >
             <button
               onClick={() => toggle(index)}
-              className={`flex w-full text-white justify-between max-sm:gap-4 bg-transparent items-center text-left max-sm:text-base font-medium text-xl max-md:text-lg ${
-                active === index ? "pb-4" : ""
-              }`}
+              className='flex w-full text-white justify-between max-sm:gap-4 bg-transparent items-center text-left max-sm:text-base font-medium text-xl max-md:text-lg'
             >
               {item.heading}{" "}
               <span
@@ -40,7 +38,7 @@ const CustomFaq = () => {
             </button>
             <p
               className={`text-white max-md:text-sm overflow-hidden transition-all duration-300 ${
-                active === index ? "max-h-32 max-sm:max-h-52" : "max-h-0"
+                active === index ? "max-h-32 max-sm:max-h-52 pt-4" : "max-h-0"
               }`}
             >
               {item.subHeading}

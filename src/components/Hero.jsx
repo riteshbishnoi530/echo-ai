@@ -1,5 +1,7 @@
 import React from 'react'
 import Header from './Header'
+import Lottie from 'lottie-react'
+import HeroLottie from '../lottie/hero.json'
 
 const Hero = () => {
   return (
@@ -13,7 +15,7 @@ const Hero = () => {
                 <button className='text-xl font-semibold rounded-full text-white bg-gradient-to-r from-lite-blue to-sky-blue py-[19.5px] px-8 hover:scale-110 duration-300 ease-linear max-md:text-base max-md:py-3 max-md:px-6'>Book A Call Now!</button>
             </div>
             <div>
-              <img className='max-w-[470px] w-full pointer-events-none max-lg:max-w-[400px] object-cover max-md:max-w-[370px] max-sm:max-w-[320px]' src="./assets/images/space-man.webp" alt="hero img" />
+              <Lottie className='max-w-[470px] w-full pointer-events-none max-lg:max-w-[400px] object-cover max-md:max-w-[370px] max-sm:max-w-[320px]' animationData={HeroLottie} loop/>
             </div>
         </div>
     </div>
