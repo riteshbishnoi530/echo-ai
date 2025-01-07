@@ -3,7 +3,7 @@ import Header from './Header'
 
 const Hero = () => {
   return (
-    <div className='px-5 min-h-[840px] bg-hero-bg bg-cover bg-center bg-no-repeat relative max-md:min-h-[600px]'>
+    <div className='px-5 min-h-[840px] bg-hero bg-cover bg-center bg-no-repeat relative max-md:min-h-[600px]'>
       <img className='absolute top-1/2 -left-0 z-10 max-w-[322px] w-full max-lg:top-1/3 max-md:hidden' src="./assets/images/hero-left-layer.webp" alt="left vector" />
         <Header/>
         <div className='flex justify-center pt-[60px] items-center max-w-[1920px] mx-auto max-lg:flex-col gap-7 max-lg:pt-10 max-md:pt-7 max-sm:pt-5'>

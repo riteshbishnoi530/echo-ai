@@ -9,8 +9,8 @@ const Counter = () => {
                     {COUNTER_LIST.map((item, index) => (
                         
                         <div
-                            className={`w-4/12 max-lg:w-1/2 max-md:w-full justify-center flex max-md:pr-0 pr-[17px] border-r-liner border-solid   ${index === 1
-                                    ? "max-lg:border-r-0"
+                            className={`w-4/12 max-lg:w-1/2 max-md:w-full max-md:!border-r-0 justify-center flex max-md:pr-0 pr-[17px] border-r-liner border-solid   ${index === 1
+                                    ? "max-lg:!border-r-0"
                                     : index === 2
                                         ? "!border-r-0 max-lg:w-full max-lg:pr-0 "
                                         : ""

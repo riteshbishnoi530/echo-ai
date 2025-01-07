@@ -21,7 +21,9 @@ module.exports = {
         'off-white': '#FFFFFFB2',
         'lite-blue': '#3A3EF5',
         'sky-blue': '#32C8F1',
-
+      },
+      backgroundImage:{
+        "hero":"url('/public/assets/images/hero-bg.webp')"
       }
     },
   },
