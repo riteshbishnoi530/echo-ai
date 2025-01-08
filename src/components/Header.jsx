@@ -21,7 +21,7 @@ const Header = () => {
     return (
         <div className='pt-3.5 overflow-hidden min-[1921px]:max-w-[1920px] mx-auto'>
             <div className='container flex justify-between items-center'>
-                <a href="#"><img className='max-w-[192px] max-lg:max-w-[105px]' src="./assets/images/logo.webp" alt="logo" /></a>
+                <a href="#"><img className='pointer-events-none max-w-[192px] max-lg:max-w-[105px]' src="./assets/images/logo.webp" alt="logo" /></a>
                 <div className={`flex gap-6 max-lg:flex-col max-lg:justify-center max-lg:items-center ${open ? 'max-lg:z-10 max-lg:translate-x-0 max-lg:bg-sky-950 max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:h-full max-lg:w-full duration-500 ease-linear blur-[80%] justify-center items-center' : 'max-lg:-left-full max-lg:hidden duration-500 ease-linear'}`}>
                     {HEADER_LIST.map((obj, i) => (
                         <ul key={i}>

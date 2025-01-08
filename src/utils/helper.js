@@ -47,11 +47,26 @@ export const FOOTER_LIST = [
     {
         heading: 'Quick Links',
         list:[
-          'About us',
-          'Solutions',
-          'Benefits',
-          'Testimonials',
-          'FAQs',
+          {
+            item: 'About us',
+            link: "#"
+        },
+        {
+            item: 'Solutions',
+            link: "#"
+        },
+        {
+            item: 'Benefits',
+            link: "#benefits"
+        },
+        {
+            item: 'Testimonials',
+            link: "#testimonials"
+        },
+        {
+            item: 'FAQs',
+            link: "#faq"
+        }
         ] 
     },
 ];

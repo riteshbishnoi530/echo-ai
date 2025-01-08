@@ -18,8 +18,8 @@ function Footer() {
                             <div key={i}>
                                 <p className='text-white mb-[14px]'>{obj.heading}</p>
                                  <ul className='flex flex-col gap-[14px]'>
-                             {obj.list.map((item, index) => (
-                                    <li key={i}><a href='#' className='text-white opacity-70 hover:text-sky-400 transition-all ease-in-out duration-300'>{item}</a></li>
+                             {obj.list.map((item, i) => (
+                                    <li key={i}><a href={item.link} className='text-white opacity-70 hover:text-sky-400 transition-all ease-in-out duration-300'>{item.item}</a></li>
                                 ))}
                              </ul>
                             </div>
@@ -28,7 +28,7 @@ function Footer() {
                     <div>
                         <p className='text-white'>Send Us An E-mail</p>
                         <a className='text-white hover:text-sky-400 transition-all ease-in-out duration-300 mt-3' href="mailto:info@echoai.ai">info@echoai.ai</a>
-                        <p className='text-white mt-8'>Follow Us On</p>
+                        <p className='text-white mt-8 max-md:mt-6 max-sm:mt-5'>Follow Us On</p>
                         <div className='flex gap-3 mt-[18px] max-sm:justify-center'>
                             <a className='hover:scale-110 transition-all ease-in-out duration-300' target='_blank' href="https://www.linkedin.com/"><Linkedin /></a>
                             <a className='hover:scale-110 transition-all ease-in-out duration-300' target='_blank' href="https://www.instagram.com/"><Instagram /></a>
