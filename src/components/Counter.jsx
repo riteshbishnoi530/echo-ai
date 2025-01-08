@@ -17,7 +17,7 @@ const Counter = () => {
                                 }`}
                         >
                             <div className="max-w-[365px] justify-center items-center flex flex-col">
-                                <h2 className='text-white text-5xl max-lg:text-4xl max-md:text-3xl font-semibold mb-2'>{item.heading}
+                                <h2 className='text-white text-5xl max-lg:text-4xl max-md:text-3xl font-semibold mb-2 max-md:mb-1'>{item.heading}
                                     </h2>
                                 
                                 <p
