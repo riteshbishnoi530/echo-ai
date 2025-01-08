@@ -2,15 +2,11 @@ import React from 'react'
 import Heading from '../common/Heading'
 import { TESTIMONIALS_CARDS } from '../utils/helper'
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css/pagination';
-
-
 import { Autoplay, Pagination } from 'swiper/modules';
 function Testimonials() {
     return (
-      <div className='px-4'>
+      <div id='testimonials' className='px-4'>
         <div className='container overflow-hidden'>
             <Heading heading={"Testimonials"} />
             <Swiper
@@ -40,7 +36,7 @@ function Testimonials() {
                 },
               }}
                pagination={true} modules={[Pagination , Autoplay]}
-                className="mySwiper flex mt-10"
+                className="mySwiper flex mt-7"
             >
                     {TESTIMONIALS_CARDS.map((obj, i) => (
                         <SwiperSlide className='px-6 pt-6 flex flex-col bg-gradient-to-b from-[#3B28F638] to-off-black rounded-3xl' key={i}>
@@ -49,7 +45,7 @@ function Testimonials() {
                                 <p className='text-white mt-2'>{obj.description}</p>
                             </div>
                             <div className='flex items-center gap-2 mt-6'>
-                                <img className='max-w-[60px]' src={obj.image} alt="" />
+                                <img className='max-w-[60px]' src={obj.image} alt="slides" />
                                 <div>
                                     <p className='text-white text-xl font-medium'>{obj.subHeading}</p>
                                     <p className='text-white '>{obj.subDescription}</p>

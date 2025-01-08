@@ -6,18 +6,22 @@ import { Facebook, Instagram, Linkedin } from '../utils/icons'
 function Footer() {
     return (
         <div className='px-4'>
-            <div className='container pt-[356px] max-lg:pt-10 max-md:pt-8'>
+            <div className='container pt-[356px] max-lg:pt-14 max-md:pt-10'>
                 <div className='flex max-sm:flex-col gap-20 max-md:gap-5 max-sm:text-center justify-between'>
                     <div>
                         <a class='max-sm:justify-center flex' href="/">
-                            <img className='max-w-[150px] max-md:max-w-[120px] max-sm:max-w-[90px]' src="/assets/images/footer-logo.webp" alt="footer logo" />
+                            <img className='max-w-[150px] pointer-events-none max-md:max-w-[120px] max-sm:max-w-[90px]' src="/assets/images/footer-logo.webp" alt="footer logo" />
                         </a>
                     </div>
                     <div className='flex flex-col gap-[14px]'>
                         {FOOTER_LIST.map((obj, i) => (
                             <div key={i}>
                                 <p className='text-white mb-[14px]'>{obj.heading}</p>
-                                <a href='#' className='text-white opacity-70 hover:text-sky-400 transition-all ease-in-out duration-300'>{obj.link}</a>
+                                 <ul className='flex flex-col gap-[14px]'>
+                             {obj.list.map((item, index) => (
+                                    <li key={i}><a href='#' className='text-white opacity-70 hover:text-sky-400 transition-all ease-in-out duration-300'>{item}</a></li>
+                                ))}
+                             </ul>
                             </div>
                         ))}
                     </div>

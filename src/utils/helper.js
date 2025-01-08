@@ -46,20 +46,14 @@ export const TESTIMONIALS_CARDS = [
 export const FOOTER_LIST = [
     {
         heading: 'Quick Links',
-        link: 'About us'
+        list:[
+          'About us',
+          'Solutions',
+          'Benefits',
+          'Testimonials',
+          'FAQs',
+        ] 
     },
-    {
-        link: 'Solutions',
-    },
-    {
-        link: 'Benefits',
-    },
-    {
-        link: 'Testimonials',
-    },
-    {
-        link: 'FAQs',
-    }
 ];
 
 export const FAQ_LIST = [
@@ -121,22 +115,22 @@ export const FAQ_LIST = [
 export const HEADER_LIST = [
     {
         item: 'About us',
-        link: "/"
+        link: "#"
     },
     {
         item: 'Solutions',
-        link: "/"
+        link: "#"
     },
     {
         item: 'Benefits',
-        link: "/"
+        link: "#benefits"
     },
     {
         item: 'Testimonials',
-        link: "/"
+        link: "#testimonials"
     },
     {
         item: 'FAQs',
-        link: "/"
+        link: "#faq"
     }
 ]

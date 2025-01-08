@@ -2,9 +2,7 @@ import React from 'react'
 
 function Heading({heading}) {
   return (
-    <div>
-        <h2 className='text-white text-5xl font-semibold text-center'>{heading}</h2>
-    </div>
+        <h2 className='text-white text-5xl max-lg:text-4xl max-md:text-3xl font-semibold text-center'>{heading}</h2>
   )
 }
 
